@@ -19,34 +19,47 @@
 
         <title>Nai Tutors</title>   <!-- Tags + Content is known as an element eg. title element-->
         <!-- Title of the website-->
+
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-        <h1 style="color: rgb(130, 195, 95);">Nai Tutors</h1>
-        <!-- Headings create structure to the website, a hierarchy that should be able to form a contents page if you tried-->
-        <!-- Make sure not to use different headings for visual purposes as you can change that with css-->
-
-        <div style="color: rgba(98, 103, 103, 0.857);" >
-
-        <p>No one should be denied the right to <ins>learn</ins> </p>
-
-        <p>Providing free <span style="color: black;">GCSE/A-level</span> tutoring for low-income families 
-            <br> or individuals with extenuating circumstances.</p> 
-
-        </div>
-
-        <br> <!--Line break-->
-
-        <hr> <!--Horizontal rule-->
+        <header>
+            <p>Nai Tutors</p>
+            <!-- Headings create structure to the website,
+              a hierarchy that should be able to form a contents page if you tried-->
+            <!-- Make sure not to use different headings
+              for visual purposes as you can change that with css-->
+        </header>
         
-        <a href="https://www.youtube.com/watch?v=HD13eq_Pmp8" target = _self title = "HTML Guide">
-            This tag makes the contents a hyperlink. <br>
-            Href sets the destination. <br>
-            Target opens the link on the current tab _self or on a new tab _blank. <br>
-            Title is what appears when you hover over the hyperlink.<br>
-            Also you should use rel = "noopener noreferrer" when opening an external link for security reasons </a>
+        
+        <main>
+            <section>
+                <h1>No one should be denied the right to <ins>learn</ins> </h1>
 
-            
+                <p>
+                    Providing free <strong>GCSE/A-level</strong> tutoring for low-income families 
+                    <br> or individuals with extenuating circumstances.
+                </p> 
+
+
+                <a href="application.html" target = _self rel="noopener noreferrer"> 
+                    Apply Now
+                </a>
+
+                <br> <!--Line break-->
+
+                <hr> <!--Horizontal rule-->
+                
+                <a href="https://www.youtube.com/watch?v=HD13eq_Pmp8" target = _self title = "HTML Guide">
+                    This tag makes the contents a hyperlink. <br>
+                    Href sets the destination. <br>
+                    Target opens the link on the current tab _self or on a new tab _blank. <br>
+                    Title is what appears when you hover over the hyperlink.<br>
+                    Also you should use rel = "noopener noreferrer" when opening an external link for security reasons </a>
+
+            </section>
+        </main>
     </body>
 </html>
