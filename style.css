@@ -1,3 +1,22 @@
 body {
-    background-color: aqua;
+    background-color: #FAFAFA;
+    color: #666666;
+    font-family: "Montserrat" , "Raleway", "Consolas"
+}
+
+h2 {
+    color: #2E7D32;
+    font-weight: 600;
+}
+.logo {
+    color: #6FAF7A;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+}
+
+.highlight {
+    color: #4CAF50;
 }
