@@ -1,12 +1,14 @@
 body {
     background-color: #FAFAFA;
     color: #666666;
-    font-family: "Montserrat" , "Raleway", "Consolas"
+    font-family: "Raleway", "Consolas"
 }
 
 h2 {
     color: #2E7D32;
     font-weight: 600;
+    font-family: "Montserrat", "Consolas";
+    font-size: 30px;
 }
 .logo {
     color: #6FAF7A;
@@ -15,8 +17,17 @@ h2 {
 
 p {
     font-weight: 400;
+    color: #666666;
 }
 
 .highlight {
     color: #4CAF50;
+}
+
+header {
+    padding: 20px 80px;
+}
+
+section {
+    padding: 100px 80px
 }
