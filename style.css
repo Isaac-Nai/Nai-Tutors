@@ -1,14 +1,14 @@
 body {
     background-color: #FAFAFA;
     color: #666666;
-    font-family: "Raleway", "Consolas"
+    font-family: "Raleway", sans-serif;
 }
 
 h2 {
     color: #2E7D32;
     font-weight: 600;
-    font-family: "Montserrat", "Consolas";
-    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
 }
 
 p {
@@ -66,13 +66,33 @@ a {
 }
 
 .navbar-links a {
+    position: relative;
     color: #6FAF7A;
+    
 }
 
+.navbar-links a::after {
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
 .apply {
     border-radius: 12px;
     border: none;
     padding: 8px 8px;
     background-color: #2E7D32;
     color: white;
+    display:inline-block;
 }
