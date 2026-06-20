@@ -35,6 +35,37 @@ a {
     text-decoration: none;
 }
 
+input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0.4rem 0.5rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    font:inherit;
+}
+
+input[type = "submit"] {
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    padding: 0.75rem 0.75rem;
+    background-color: #2E7D32;
+    color: white;
+    display:inline-block;
+    transition: background-color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+    cursor: pointer;
+}
+
+input[type = "submit"]:hover {
+    background-color: #4CAF50;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    color: #2E7D32;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -150,6 +181,7 @@ a {
 }
 
 .application {
+    gap:3.5rem;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -209,4 +241,63 @@ a {
     letter-spacing: 0.2px;
     margin: 0;
     padding-bottom: 1rem;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.student-form {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
+    padding: 1rem 2rem;
+    padding-top: 3rem;
+
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.side-content {
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+
+.side-content h3 {
+    margin-top: 0rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #6FAF7A;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.side-content img {
+    width: clamp(150px, 16vw, 200px);
+}
+
+.full-width {
+    grid-column: 2 / 4;
+}
+
+.side-content p {
+    font-weight: 600;
 }
