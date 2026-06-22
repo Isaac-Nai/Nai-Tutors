@@ -43,7 +43,7 @@ input {
     font:inherit;
 }
 
-input[type = "submit"] {
+.submit-btn{
     font-size: 1rem;
     border-radius: 12px;
     border: none;
@@ -55,7 +55,7 @@ input[type = "submit"] {
     cursor: pointer;
 }
 
-input[type = "submit"]:hover {
+.submit-btn:hover {
     background-color: #4CAF50;
     font-size: 1.25rem;
     font-weight: 600;
@@ -193,7 +193,6 @@ label {
 }
 
 .option-section {
-    margin-top: 4rem;
     display: flex;
     gap:1rem;
 

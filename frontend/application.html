@@ -28,14 +28,14 @@
         <section class = "option-section">
 
             <div class = "card student">
-                <img class="student-image" src="/images/Student Illustration.svg" alt="Illustration of Student Studying">
+                <img class="student-image" src="/frontend/images/Student Illustration.svg" alt="Illustration of Student Studying">
                 <p>I'm a Student</p>
             </div>
             
             <div class = "divider"></div>
 
             <div class = "card parent">
-                <img class="parent-image" src="/images/Parent Illustration.svg" alt="Illustration of a Parent taking kids to school">
+                <img class="parent-image" src="/frontend/images/Parent Illustration.svg" alt="Illustration of a Parent taking kids to school">
                 <p>I'm a Parent/Guardian</p>
             </div>
 
@@ -48,7 +48,7 @@
                 
                 <div class = "side-content">
                     <h3>Learning a bit <br>more about you</h3>
-                    <img src="/images/Student Studying Illustration.svg" alt="Student studying">
+                    <img src="/frontend/images/Student Studying Illustration.svg" alt="Student studying">
                     <p>Step 1 out of 5</p>
                 </div>
 
@@ -71,14 +71,19 @@
                     <label for ="tel">Phone Number:</label>
                     <input type="tel" id="tel" name="tel">
                 </div>
-
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                
                 <div class = "form-group full-width">       
                     <label for ="password">Password:</label>
                     <input type="password" id = "password" name ="password">
                 </div>
 
                 <div class="form-group full-width">
-                    <input type="submit">
+                    <button type="submit" class = "submit-btn">Sign Up!</button>
                 </div>
 
             </form>
@@ -86,6 +91,6 @@
 
     </main>
     
-    <script src = "dom.js"></script>
+    <script src = "application.js"></script>
 </body>
 </html>
