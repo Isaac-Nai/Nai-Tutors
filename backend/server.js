@@ -1,8 +1,19 @@
 const express = require("express");
-const app = express()
+const signUp = require("./routes/signUp");
 
-const port = process.env.PORT
 
+const app = express();
+const port = process.env.PORT || 5000;
+
+///////////////// Middleware
+
+
+// Body parser
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+// Logger 
 
 app.use((req, res, next) => {
     console.log(req.url);
@@ -10,7 +21,14 @@ app.use((req, res, next) => {
     next();
 })
 
-app.listen(port, () => {
+// Routes
+
+app.use("/api/signUp", signUp)
+
+
+// Listening 
+
+app.listen(port, () => { 
     console.log("Server is live and running on port: " + port);
 })
 
