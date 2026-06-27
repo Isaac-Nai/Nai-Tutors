@@ -29,12 +29,11 @@ async function request(event) {
         fname: document.querySelector("#fname").value,
         lname: document.querySelector("#lname").value,
         email: document.querySelector("#email").value,
-        tel: document.querySelector("#tel").value,
         password: document.querySelector("#password").value,
         dob: document.querySelector("#dob").value,
     }
 
-    const res = await fetch("/api/sign-up", {
+    const res = await fetch("http://localhost:5000/api/signUp", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
