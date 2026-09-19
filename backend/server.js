@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const signUp = require("./routes/signUp");
+const logger = require("./middleware/logger");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -16,11 +17,7 @@ app.use(express.urlencoded({extended: false}));
 
 // Logger 
 
-app.use((req, res, next) => {
-    console.log(req.url);
-    console.log(req.method);
-    next();
-})
+app.use(logger);
 
 // Routes
 
